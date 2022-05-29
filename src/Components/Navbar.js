@@ -8,7 +8,7 @@ export default function Navbar(props) {
       <div
         className={`container-fluid navbar navbar-expand-lg bg-${props.mode}`}
       >
-        <a className="navbar-brand" to="/">
+        <a className="navbar-brand" href="#">
           {props.title}
         </a>
         <button
@@ -30,7 +30,7 @@ export default function Navbar(props) {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">
+              <a className="nav-link" href="#">
                 About
               </a>
             </li>
@@ -47,12 +47,12 @@ export default function Navbar(props) {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" to="/">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" to="/">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
@@ -60,14 +60,14 @@ export default function Navbar(props) {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" to="/">
+                  <a className="dropdown-item" href="#">
                     Something else here
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <a to="/" className="nav-link disabled">
+              <a href="#" className="nav-link disabled">
                 Disabled
               </a>
             </li>
