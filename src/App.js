@@ -5,7 +5,7 @@ import Textarea from "./Components/Textarea";
 
 import React, { useState } from "react";
 import Alert from "./Components/Alert";
-import { BrowserRouter as Router, Route, Routes, link } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes, link } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -32,18 +32,20 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navbar title="demoText" mode={mode} darkmode={darkmode} />
+      {/* <Router> */}
+      <Navbar title="demoText" mode={mode} darkmode={darkmode} />
 
-        <Alert alert={alert} />
+      <Alert alert={alert} />
 
-        <div className="container my-3">
-          <Routes>
-            <Route path="/" element={<Textarea mode={mode} />}></Route>
-            <Route path="/about" element={<Darkmode mode={mode} />}></Route>
-          </Routes>
-        </div>
-      </Router>
+      <div className="container my-3">
+        {/* <Routes> */}
+        {/* <Route path="/" element={}></Route> */}
+        <Textarea mode={mode} />
+        <Darkmode mode={mode} />
+        {/* <Route path="/about" element={}></Route> */}
+        {/* </Routes> */}
+      </div>
+      {/* </Router> */}
     </>
   );
 }
